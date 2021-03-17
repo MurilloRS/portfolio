@@ -8,29 +8,33 @@
     text-decoration: none;
 }
 
+/* define variaveis para fontes padrões */
 :root{
     --font-primary: "Baloo Da 2", serif ;
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Mulish", serif;
 }
 
+/* icone de 3 linhas que mostra o menu */
 .hamburguer {
-    width: 2rem;
+    width: 2rem; 
     height: 2rem;
     position: fixed;
     z-index: 100;
     right: 2rem;
-    top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    cursor: pointer;
+    top: 2rem; 
+    display: flex;  /*elemntos se tornam flexivis*/
+    flex-direction: column;  /*forma de alinhamento dos elementos*/
+    justify-content: space-evenly; /*os itens são distribuídos para que o espaçamento entre dois itens (e o espaço nas bordas) seja igual.*/
+    cursor: pointer;  /*identifica que o icone é um link*/
 }
 
 .show-menu .hamburguer{
     right: 16rem;
 }
+/* ----------------------------------------------------------------- */
 
+/* efeito trabalhado com as linhas para formar um x */
 .line{
     width: 100%;
     height: .1rem;
@@ -51,7 +55,9 @@
 .show-menu #line3{
     transform: rotate(-45deg) translate(.4rem, -.44rem);    
 }
+/* ------------------------------------------------------------ */
 
+/* cria o span com o texto fechar no icone que fecha o menu */
 .hamburguer span{
     position: absolute;
     left: 3rem;
@@ -79,6 +85,8 @@
     opacity: 1;
     transition: .8s;
 }
+
+/* ----------------------------------------------------- */
 
 header {
     width: 100%;
@@ -199,7 +207,8 @@ header {
 }
 
 .menu-link:hover{
-    color: #6a3093;
+    /* color: #6a3093; */
+    color: #a044ff;
 
 }
 

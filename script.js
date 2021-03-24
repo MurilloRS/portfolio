@@ -1,5 +1,5 @@
 function esconderMenu(){
-    document.querySelector(".container").classList.toggle("show-menu")
+    document.querySelector(".container").classList.remove("show-menu")
 }
 
 document.querySelector(".hamburguer").addEventListener("click", 

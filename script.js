@@ -1,6 +1,11 @@
-
-document.querySelector(".hamburguer").addEventListener("click", () =>
+function esconderMenu(){
     document.querySelector(".container").classList.toggle("show-menu")
+}
+
+document.querySelector(".hamburguer").addEventListener("click", 
+    function exibirEsconder() {
+        document.querySelector(".container").classList.toggle("show-menu")
+    }
 );
 
 document.querySelector("#qtde").addEventListener("change", atualizarPreco)

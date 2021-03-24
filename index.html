@@ -15,6 +15,7 @@
 <body>
     <div class="container">
 
+        <!-- cria as 3 linhas do menu -->
         <div class="hamburguer">
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
@@ -33,20 +34,21 @@
             </div>
         </header>
 
+       
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#home" onclick="esconderMenu()" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" onclick="esconderMenu()" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" onclick="esconderMenu()" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" onclick="esconderMenu()" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#orcamento" onclick="esconderMenu()" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
-                <a href=""><i class="fab fa-facebook"></i></a>
-                <a href=""><i class="fab fa-github-alt"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/murillorodrigues1409" target="_blank" onclick="esconderMenu()" ><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/MurilloRS" target="_blank" onclick="esconderMenu()" ><i class="fab fa-github-alt"></i></a>
+                <a href="https://www.instagram.com/murillors/" target="_blank" onclick="esconderMenu()" ><i class="fab fa-instagram"></i></a>
             </div>
         </aside>
 
@@ -174,8 +176,6 @@
         </section>
 
         <section class="sessao-contato" id="contato">
-
-
             <!-- .contato-wrapper>.contato-left>.contato-right>(h1{Contato})>form>(.input-group>input.field+label.field-label)*3 -->
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
@@ -237,15 +237,16 @@
                 </p>
                 <div class="social-list">
                     <ul>
-                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/murillorodrigues1409"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://github.com/MurilloRS"><i class="fab fa-github-alt"></i></a></li>
+                        <li><a href="https://www.instagram.com/murillors/"><i class="fab fa-instagram"></i></a></li>
+                        <!-- <li><a href=""><i class="fab fa-twitter"></i></a></li> -->
                     </ul>
                 </div>
             </div>
         </footer>
 
-        <a href="#home" id="link-topo">
+        <a href="#home" onclick="esconderMenu()" id="link-topo">
             <i class="fas fa-arrow-up"></i>
         </a>
 
